@@ -180,7 +180,7 @@
    .hero-img{
     position: absolute;
    
-    max-width:  550px;
+    max-width: 479px;
     margin: auto;
     top:3rem;
     left: 0.5rem;
@@ -214,7 +214,7 @@
 }
 .main-content >*:not(:last-child){
   padding-bottom: 4rem;
-  outline: 5px solid green;
+  
 }
 
 .services{
@@ -233,11 +233,9 @@
 
 @media(min-width: 700px) and (max-width: 1000px){
 
-    .services{
-        padding-inline: 6rem;
-        padding-top: 12.68rem;
-        --padding-bottom: 6.25rem;
-    }
+    
+   
+
     .card{
         place-content: center;
     grid-template-rows: 1fr;
@@ -253,6 +251,20 @@
  .card-title +p {
     grid-column: 2/3;
  }
+}
+
+
+@media(min-width: 1000px){
+
+    .hero-img{
+        max-width: 600px;
+    }
+
+    .services{
+        padding-inline: 6rem;
+        padding-top: 12.68rem;
+        --padding-bottom: 6.25rem;
+    }
 }
 
 .card-number, .card-title{
@@ -279,10 +291,11 @@
 
 .CTA {
     z-index: 99;
-     position: relative;
     padding-top: 20rem;
     padding-inline: var(--size-200); 
-    outline: 1px solid red;
+ 
+    display: grid;
+  
    
 }
 
@@ -290,13 +303,18 @@
 .CTA-card{
     padding: 2rem;
     z-index:99;
+  
+
 }
 
 @media(min-width:700px) {
    
+    .CTA{
+     grid-template-columns:0.5fr 1fr;
+    }
     .CTA-card{
-        max-width: 514px;
-        margin-left: auto;
+        /* max-width: 514px; */
+        /* margin-left: auto; */
     }
 }
  
@@ -311,28 +329,25 @@
 }
 
 .founder-img{
-    max-width: 350px;
+    max-width: 450px;
     margin: auto;
-    top: -10rem;
-    bottom: 0rem;
-    right: 0;
-    left: 0;
-  position: absolute;
-    margin: auto;
-    z-index: -1;
+    grid-column: 1/2;
+    max-width: 16rem;
  
 }
 
 @media(min-width: 700px) {
-    .founder-img{
-      right:50%;
-      top:0;
-      max-width:281px;
-    }
+     .founder-img{
+        margin-right: -6rem;
+        margin-top: -10rem;
+       
+    } 
 }
 
-.footer{
- 
+@media(min-width: 1000px){
+    .founder-img{
+        max-width: 450px;
+    }
 }
 
 .wrapper-footer{
