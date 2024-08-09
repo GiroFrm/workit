@@ -129,6 +129,8 @@
    
     display: grid;
     align-content: center;
+
+    padding-bottom: 4rem;
    }
 
 
@@ -145,16 +147,21 @@
    .hero{
     position: relative;
     margin-bottom: 9.75rem;
-
+    
+    padding-inline: 1rem;
    }
+
+
 
    .hero-img{
     position: absolute;
     margin-top: 3rem;
-    max-width: 720px;
+    max-width:  720px;
     margin: auto;
-    left: 0;
+    top:14rem;
+    left: 0.5rem;
     right: 0;
+    padding-inline: 1rem;
    }
 
    .hero-title{
@@ -172,6 +179,9 @@
     padding: 0.7em 1.4em;
 }
 
+.main-content {
+    margin-bottom: 4.5rem;
+}
 .main-content >*:not(:last-child){
   padding-bottom: 4rem;
 }
@@ -181,6 +191,8 @@
     color:var(--clr-secondary-700);
     padding-bottom: var(--padding-bottom);
     padding-top: 9.75rem;
+
+    padding-inline: 1rem;
 }
 
 .card{
@@ -213,12 +225,22 @@
 .CTA {
     outline: 3px solid red;
     padding-top: 6.25rem;
+    padding-inline: 1rem;  
 }
 
+.CTA-card{
+    padding: 2rem;
+}
 .CTA-title {
     font-family: var(--ff-accent);
     font-size: 2rem;
+    margin-bottom: 1rem;
 }
+
+.CTA-title + p{
+    margin-bottom: 1.5rem;
+}
+
 
 .founder-img{
     max-width: 281px;
