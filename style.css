@@ -226,6 +226,8 @@
     outline: 3px solid red;
     padding-top: 6.25rem;
     padding-inline: 1rem;  
+    position: relative;
+    z-index: 99;
 }
 
 .CTA-card{
@@ -245,6 +247,12 @@
 .founder-img{
     max-width: 281px;
     margin: auto;
+    top: -8rem;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    margin: auto;
+    position: absolute;
 }
 
 .footer{
