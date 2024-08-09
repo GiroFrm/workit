@@ -127,6 +127,8 @@
     font-family: var(--ff-base  );
     text-align: center;
    
+    display: grid;
+    align-content: center;
    }
 
 
@@ -134,6 +136,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
+    padding-top: 2rem;
+    padding-inline: 1rem;
+
  
    }
    .hero{
@@ -144,7 +150,11 @@
 
    .hero-img{
     position: absolute;
-    margin-top: 3rem
+    margin-top: 3rem;
+    max-width: 720px;
+    margin: auto;
+    left: 0;
+    right: 0;
    }
 
    .hero-title{
