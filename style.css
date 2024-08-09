@@ -67,7 +67,8 @@
 
     --size-200: 1rem; 
     --size-300: 2rem;  
-
+    --size-350: 2.5rem;
+    --size-600: 10rem;
     --fs-100: 1rem;
     --fs-150: 1.125rem;
     --fs-250: 1.625rem;
@@ -78,7 +79,15 @@
   @media(min-width: 700px){
     :root{
     --fs-400: 3.75rem;
+    --size-200: 2.5rem;
     }
+  }
+
+  @media(min-width: 1000px){
+   :root{
+    --fs-400: 5rem;
+    --size-200: 10rem;
+   }
   }
 
    a{
@@ -115,7 +124,12 @@
     gap: 4rem;
    }
 
-   
+   @media(min-width: 1000px){
+    .grid-flow{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+   }
+
    .gap-medium{
     gap: 2.5rem;
    }
@@ -147,28 +161,32 @@
     justify-content: space-between;
    
     padding-top: 2rem;
-    padding-inline: 1rem;
+    padding-inline: var(--size-200)
 
  
    }
    .hero{
     position: relative;
-    margin-bottom: 9.75rem;
+    margin-bottom: 10rem;
     
     padding-inline: 1rem;
    }
 
 
+    .hero-img-container{
+    position: relative;
+    }
 
    .hero-img{
     position: absolute;
-    margin-top: 3rem;
-    max-width:  720px;
+   
+    max-width:  550px;
     margin: auto;
-    top:14rem;
+    top:3rem;
     left: 0.5rem;
     right: 0;
     padding-inline: 1rem;
+   
    }
 
    .hero-title{
@@ -192,9 +210,11 @@
 .main-content {
     margin-bottom: 4.5rem;
     
+    
 }
 .main-content >*:not(:last-child){
   padding-bottom: 4rem;
+  outline: 5px solid green;
 }
 
 .services{
@@ -203,7 +223,7 @@
     padding-bottom: var(--padding-bottom);
     padding-top: 9.75rem;
 
-    padding-inline: 1rem;
+    padding-inline: var(--size-200);
 }
 
 .card{
@@ -211,10 +231,12 @@
     gap: 1rem;
 }
 
-@media(min-width: 700px){
+@media(min-width: 700px) and (max-width: 1000px){
 
     .services{
         padding-inline: 6rem;
+        padding-top: 12.68rem;
+        --padding-bottom: 6.25rem;
     }
     .card{
         place-content: center;
@@ -256,15 +278,26 @@
 }
 
 .CTA {
-     
-    padding-top: 20rem;
-    padding-inline: 1rem;  
-    position: relative;
     z-index: 99;
+     position: relative;
+    padding-top: 20rem;
+    padding-inline: var(--size-200); 
+    outline: 1px solid red;
+   
 }
+
 
 .CTA-card{
     padding: 2rem;
+    z-index:99;
+}
+
+@media(min-width:700px) {
+   
+    .CTA-card{
+        max-width: 514px;
+        margin-left: auto;
+    }
 }
  
 .CTA-title {
@@ -280,12 +313,22 @@
 .founder-img{
     max-width: 350px;
     margin: auto;
-    top: 2rem;
+    top: -10rem;
+    bottom: 0rem;
     right: 0;
     left: 0;
-    z-index: -1;
+  position: absolute;
     margin: auto;
-    position: absolute;
+    z-index: -1;
+ 
+}
+
+@media(min-width: 700px) {
+    .founder-img{
+      right:50%;
+      top:0;
+      max-width:281px;
+    }
 }
 
 .footer{
