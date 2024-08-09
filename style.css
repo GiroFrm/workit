@@ -107,12 +107,9 @@
 
    body{
     color: var(--clr-neutral-100);
-    background-color: var(--clr-primary-900);
+   
     font-family: var(--ff-base  );
-    font-size: var();
-
-    padding: 2rem 1rem;
-    padding-bottom:0;
+   
     text-align: center;
    
    }
