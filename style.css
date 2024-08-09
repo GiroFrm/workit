@@ -200,4 +200,38 @@
     font-size: 1.75rem;
 }
 
+.CTA {
+    outline: 3px solid red;
+    padding-top: 6.25rem;
+}
+
+.CTA-title {
+    font-family: var(--ff-accent);
+    font-size: 2rem;
+}
+
+.founder-img{
+    max-width: 281px;
+    margin: auto;
+}
+
+.footer{
+ 
+}
+
+.wrapper-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 4.5rem;
+    outline: 3px solid green;
+    
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
   
